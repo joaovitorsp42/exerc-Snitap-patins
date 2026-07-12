@@ -52,7 +52,7 @@ section.hero{
         background-color: white;
         display: flex;
       }
-      &:hover{
+      &:hover {
         scale: 1.1;
       }
     }
