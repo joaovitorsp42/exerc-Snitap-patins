@@ -100,3 +100,30 @@ section.gallery{
     transform: translateY(100%);
   }
 }
+@media (width < 80em){
+  section.gallery{
+    padding: 1.5rem 1rem;
+    & img {
+    width: 100%;
+    max-height: 16rem;
+  }
+
+    & .content{
+      gap: 1.5rem ;
+      grid-template-areas: 
+    "a a"
+    "b b"
+    "c c"
+    "d d";
+
+    & figure{
+    animation: image-appear linear backwards;
+    animation-timeline: view();
+    animation-range: 100px  300px;
+    &[data-delay] {
+      animation-range: 150px 350px;
+    } 
+    }
+  }
+}
+}

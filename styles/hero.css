@@ -163,3 +163,12 @@ section.hero{
     transform: translateY(-15rem);
   }
 }
+@media (width < 80em){
+ section.hero{
+  flex-direction: column-reverse;
+  padding: 1.5rem 1rem;
+  & .buttons{
+    flex-direction: column-reverse;
+  }
+ }
+}
